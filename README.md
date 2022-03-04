@@ -7,11 +7,11 @@ Name:
 
 ## Section 2 - UML Diagrams
 
-Link to UML Diagrams:
-1. Use Case Diagram:
-2. Class Diagram:
+Link to UML Diagram fil: one file with multiple tabs
+1. Use Case Diagram
+2. Class Diagram
 3. Sequence Diagram:
-4. State Diagram:
+4. State Diagramm
 
 ## Section 3 - Code 
 1. Choice of use case, explanation, and necessary classes/methods to complete it
