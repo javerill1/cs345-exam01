@@ -2,16 +2,12 @@ package edu.ithaca.dturnbull.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import edu.ithaca.dturnbull.bank.BankAccount;
-//import org.junit.Assert;
-//import org.junit.jupiter.api.Test;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.io.IOException;
 import java.util.List;
-
-//import static org.junit.jupiter.api.Assertions.*;
 
 class JsonUtilTest {
 
