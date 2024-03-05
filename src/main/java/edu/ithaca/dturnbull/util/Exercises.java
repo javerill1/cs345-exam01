@@ -18,7 +18,7 @@ public class Exercises {
      * @param difficultyLevel The difficulty level of the exercise
      * @param weighted If the exercise is weighted or not
      * @param bodyPart What body part the exercise uses
-     * @param machine If the machine uses a machine or not
+     * @param machine If the exercise uses a machine or not
      * @param sets How many sets you have for an exercise
      * @param repetitions How many repetitions you have for an exercise
      */
@@ -129,6 +129,55 @@ public class Exercises {
             System.out.println("This exercise is performed without a machine.");
             return false;
         }
+    }
+
+    /**
+     * Sets the description for an exercise
+     */
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    /**
+     * Sets the difficulty Level for an exercise
+     */
+    public void setDifficultyLevel(String difficultyLevel) {
+        this.difficultyLevel = difficultyLevel;
+    }
+
+    /**
+     * Sets if the exercise is weighted or not
+     */
+    public void setWeighted(boolean weighted) {
+        this.weighted = weighted;
+    }
+
+    /**
+     * Sets the body part for an exercise
+     */
+    public void setBodyPart(String bodyPart) {
+        this.bodyPart = bodyPart;
+    }
+
+    /**
+     * Sets if the exercise uses a machine or not
+     */
+    public void setMachine(boolean machine) {
+        this.machine = machine;
+    }
+
+    /**
+     * Sets the sets for an exercise
+     */
+    public void setSets(int sets) {
+        this.sets = sets;
+    }
+
+    /**
+     * Sets the repetitions for an exercise
+     */
+    public void setRepetitions(int repetitions) {
+        this.repetitions = repetitions;
     }
     
 }
