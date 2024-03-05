@@ -44,9 +44,9 @@ public class Trainer {
      * @return The added exercise
      */
     public Exercises addExercise(String name, String description, String difficultyLevel, boolean weighted, String bodyPart, boolean machine, int sets, int repetitions) {
-        Exercises exercise = new Exercises(name, description, difficultyLevel, weighted, bodyPart, machine, sets, repetitions); // create that new exercise
-        allExercises.add(exercise); // add the exercise the list of exercises
-        return exercise; // return the exercise that has been added to the list of exercises
+        Exercises exerciseToAdd = new Exercises(name, description, difficultyLevel, weighted, bodyPart, machine, sets, repetitions); // create that new exercise
+        allExercises.add(exerciseToAdd); // add the exercise the list of exercises
+        return exerciseToAdd; // return the exercise that has been added to the list of exercises
     }
 
     /**
@@ -62,17 +62,18 @@ public class Trainer {
      * @return The edited exercise
      */
     public Exercises editExercise(String name, String description, String difficultyLevel, boolean weighted, String bodyPart, boolean machine, int sets, int repetitions) {
-        for (Exercises exercise : allExercises) { // Iterate through the list of exercises
-            if (exercise.getName().equals(name)) { // ONLY check to see if the name for the actual and edited exercise match
-                exercise.setDescription(description);
-                exercise.setDifficultyLevel(difficultyLevel);
-                exercise.setWeighted(weighted);
-                exercise.setBodyPart(bodyPart);
-                exercise.setMachine(machine);
-                exercise.setSets(sets);
-                exercise.setRepetitions(repetitions);
+        
+        for (Exercises exerciseToEdit : allExercises) { // Iterate through the list of exercises
+            if (exerciseToEdit.getName().equals(name)) { // ONLY check to see if the name for the actual and edited exercise match
+                exerciseToEdit.setDescription(description);
+                exerciseToEdit.setDifficultyLevel(difficultyLevel);
+                exerciseToEdit.setWeighted(weighted);
+                exerciseToEdit.setBodyPart(bodyPart);
+                exerciseToEdit.setMachine(machine);
+                exerciseToEdit.setSets(sets);
+                exerciseToEdit.setRepetitions(repetitions);
                 
-                return exercise; // Return the edited exercise
+                return exerciseToEdit; // Return the edited exercise
             }
         }
         return null; // Return null if the exercise does not exist

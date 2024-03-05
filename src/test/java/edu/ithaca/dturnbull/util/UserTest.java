@@ -14,7 +14,6 @@ public class UserTest {
     public void createUserTest() {
         // Create your user
         User user = new User("Paul Averill", "24", "male", 72.0, 175.0);
-
         assertEquals("Paul Averill", user.getName());
         assertEquals("24", user.getAge());
         assertEquals("male", user.getGender());
