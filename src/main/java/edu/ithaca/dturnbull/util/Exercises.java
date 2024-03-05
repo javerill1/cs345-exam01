@@ -43,7 +43,11 @@ public class Exercises {
         public int getSets() { return sets; }
         public int getRepetitions() { return repetitions; }
 
-    // Checks to see if select difficulty level is valid
+    /**
+     * Checks to see what the difficulty level is
+     * @param difficulty the difficulty level
+     * @return true if the diffuculty is beginner/intermediate/advanced, false otherwise.
+     */
     public boolean selectDifficultyLevel(String difficulty) {
         if (difficulty.equals("beginner")) {
             System.out.println("Beginner difficulty level selected.");
@@ -63,7 +67,11 @@ public class Exercises {
         }
     }
 
-    // Checks to if the exercise is weighted or not
+    /**
+     * Checks to if the exercise is weighted or not
+     * @param weighted if the exercise is weighted or not
+     * @return true if the exercise is weighted, false otherwise.
+     */
     public boolean selectWeighted(boolean weighted) {
         if (weighted == true) {
             System.out.println("This exercise is performed with weights.");
@@ -75,7 +83,11 @@ public class Exercises {
         }
     }
 
-    // Checks to see what body part the exercise uses
+    /**
+     * Checks to see what body part the exercise uses
+     * @param bodyPart what body part the exercise uses
+     * @return the body part is in the database, invalid otherwise
+     */
     public String selectBodyPart(String bodyPart) {
         if ("legs".equals(bodyPart)) {
             return bodyPart;
@@ -103,7 +115,11 @@ public class Exercises {
         }
     }
 
-    // Checks to if the exercise uses weiga machine or not
+    /**
+     * Checks to if the exercise uses a machine or not
+     * @param machine if the uses a machine or not
+     * @return true if the exercise uses a machine, false otherwise
+     */
     public boolean selectMachine(boolean machine) {
         if (machine == true) {
             System.out.println("This exercise is performed with a machine.");
