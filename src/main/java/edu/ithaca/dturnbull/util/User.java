@@ -1,5 +1,9 @@
 package edu.ithaca.dturnbull.util;
 
+import java.util.List;
+
+import edu.ithaca.dturnbull.util.WorkoutOrganizer;
+
 public class User {
 
     private String name;

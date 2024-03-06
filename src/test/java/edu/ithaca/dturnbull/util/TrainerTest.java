@@ -48,7 +48,7 @@ public class TrainerTest {
         assertEquals(12, editedExercise.getRepetitions());
 
         // Remove the exercise that is in the existing list of exercises
-        Exercises removedExercise = trainer.removeExercise("Squat", "Lower body exercise", "Intermediate", true, "Legs", false, 3, 10);
+        Exercises removedExercise = trainer.removeExercise("Squat", "Lower body exercise updated description", "Advanced", false, "Back", true, 4, 12);
         // Check that the exercise was removed correctly
         assertNotNull(removedExercise); 
         assertEquals(addedExercise, removedExercise);

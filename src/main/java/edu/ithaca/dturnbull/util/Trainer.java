@@ -1,5 +1,7 @@
 package edu.ithaca.dturnbull.util;
 
+import edu.ithaca.dturnbull.util.WorkoutOrganizer;
+
 public class Trainer {
 
     private String name;
@@ -43,7 +45,7 @@ public class Trainer {
      * @param repetitions How many repetitions the exercise has
      * @return The added exercise
      */
-    public Exercises addExercise(String name, String description, String difficultyLevel, boolean weighted, String bodyPart, boolean machine, int sets, int repetitions) {
+    public static Exercises addExercise(String name, String description, String difficultyLevel, boolean weighted, String bodyPart, boolean machine, int sets, int repetitions) {
         Exercises exerciseToAdd = new Exercises(name, description, difficultyLevel, weighted, bodyPart, machine, sets, repetitions); // create that new exercise
         allExercises.add(exerciseToAdd); // add the exercise the list of exercises
         return exerciseToAdd; // return the exercise that has been added to the list of exercises

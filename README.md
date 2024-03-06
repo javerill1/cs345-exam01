@@ -1,7 +1,7 @@
 # CS345 - Software Engineering at Ithaca College
 ## Exam 01 - Project Pitch, UML Diagrams, TDD Coding
 
-Name:
+Name: Joe Averill
 
 ## Section 1 - Pitch 
 
