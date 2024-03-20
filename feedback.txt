@@ -1,1 +1,16 @@
 
+
+
+Pitch 6/6
+Creative idea Gym Workout Tracker
+Diagrams 28/32
+Use Case - Very clear with extra color coding
+Class - Shouldn’t Trainer extend User since they share a lot of the same properties and method functions, Seems like Workout Organizer is should have a “has a” relationship to both.
+Class diagram seems a bit underdeveloped relative to other diagrams
+Sequences - Very useful and presented well.
+State - and useful
+Code 22/22
+Wel commented with Javadocs
+Comprehensive Tests for multiple  classes
+Excecellent TrainerTest integration test. 
+Excellent Work 56/60
